@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "chesterdavid.firstiteration.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "firstiteration.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

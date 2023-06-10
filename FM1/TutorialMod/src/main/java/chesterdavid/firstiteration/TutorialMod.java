@@ -1,6 +1,7 @@
 package chesterdavid.firstiteration;
 
 import chesterdavid.firstiteration.core.ModBlocks;
+import chesterdavid.firstiteration.core.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
@@ -59,7 +60,7 @@ public class TutorialMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-
+        ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
     }
 
