@@ -1,5 +1,6 @@
 package chesterdavid.firstiteration;
 
+import chesterdavid.firstiteration.core.ModBlocks;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
@@ -57,6 +58,9 @@ public class TutorialMod {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+
+        ModBlocks.BLOCKS.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
