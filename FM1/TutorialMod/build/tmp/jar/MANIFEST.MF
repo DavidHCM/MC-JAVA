@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Specification-Title: tutorialmod
-Specification-Version: 1
-Implementation-Title: firstiteration
-Implementation-Version: 1.0
-Implementation-Timestamp: 2023-06-09T20:31:25-0600
-MixinConfigs: firstiteration.mixins.json
-
