@@ -1,6 +1,7 @@
 package net.chesterdavid.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.chesterdavid.tutorialmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,6 +26,14 @@ public class TutorialMod
     public TutorialMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        // Stating our registries
+        /*
+        With this we are stating that any object (either a block or item)
+        is created in our mod we are registering this object so that the game
+        can se that it exist, giving it a value. Similar to a hash map.
+         */
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
