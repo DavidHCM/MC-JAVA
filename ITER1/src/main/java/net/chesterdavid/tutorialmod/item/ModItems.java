@@ -23,6 +23,10 @@ public class ModItems
     public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
 
+    // Each time we have to add a item we just use a new registry
+    public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+
     public static void register(IEventBus eventBus)
     {
         ITEMS.register(eventBus);
