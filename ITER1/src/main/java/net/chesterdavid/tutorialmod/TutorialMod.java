@@ -1,6 +1,7 @@
 package net.chesterdavid.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.chesterdavid.tutorialmod.block.ModBlocks;
 import net.chesterdavid.tutorialmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,6 +35,8 @@ public class TutorialMod
         can se that it exist, giving it a value. Similar to a hash map.
          */
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
