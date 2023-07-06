@@ -37,7 +37,7 @@ public class ModBlocks
     }
 
 
-    
+
     // Helpers methods where if there are blocks then there will be items that come with it
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T>block, CreativeModeTab tab)
