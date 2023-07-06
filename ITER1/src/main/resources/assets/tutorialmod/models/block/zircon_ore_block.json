@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "tutorialmod/block/zircon_ore"
+    "all": "tutorialmod/block/zircon_ore_block"
   }
 }
